@@ -5,10 +5,10 @@ body, html {
 	color: #777;
 }
 h1 {
+	line-height: 60px;
+	font-size: 32px;
 }
-h1 strong {
-	font-weight: 900;
-}
+
 h2 {
 	line-height: 20px;
 	font-size: 32px;
@@ -33,7 +33,7 @@ p {
 	font-family: 'Open Sans', sans-serif;
 }
 a {
-	color: #0dad8d;
+	color: #FA2D01;
 }
 a:hover, a:focus {
 	text-decoration: none;
@@ -67,7 +67,7 @@ hr {
 	width: 60px;
 	text-align: center;
 	position: relative;
-	background: #0dad8d;
+	background: #FA2D01;
 	border: 0;
 	margin: 10px auto 30px;
 }
@@ -104,22 +104,22 @@ hr {
 	letter-spacing: 1px;
 }
 #menu.navbar-default .navbar-nav > li > a:hover {
-	color: #0dad8d;
+	color: #FA2D01;
 }
 .on {
 	background-color: #222222 !important;
 	padding: 0 !important;
 }
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-	color: #0dad8d !important;
+	color: #FA2D01 !important;
 	background-color: transparent;
 }
 .navbar-toggle {
 	border-radius: 0;
 }
 .navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
-	background-color: #0dad8d;
-	border-color: #0dad8d;
+	background-color: #FA2D01;
+	border-color: #FA2D01;
 }
 .navbar-default .navbar-toggle:hover>.icon-bar {
 	background-color: #FFF;
@@ -127,6 +127,8 @@ hr {
 /* Home Style */
 header {
 	background: url(../img/header-bg.jpg) no-repeat bottom right;
+	/* filter: brightness(51%); */
+	z-index: 2;
 	background-size: cover;
 	color: #cfcfcf;
 	position: relative;
@@ -141,6 +143,7 @@ header p {
 	position: relative;
 	padding-top: 250px;
 	padding-right: 0;
+	filter: brightness(99%)
 	padding-left: 0;
 	padding-bottom: 170px;
 }
@@ -153,7 +156,7 @@ header p {
 	color: #fff;
 	font-family: 'Open Sans', sans-serif;
 	background-color: transparent;
-	border: 2px solid rgba(255,255,255,0.8);
+	border: 2px solid black;
 	margin: 0 8px;
 	padding: 12px 24px;
 	font-size: 16px;
@@ -162,7 +165,8 @@ header p {
 }
 .btn-default:hover, .btn-default:focus, .btn-default.focus, .btn-default:active, .btn-default.active {
 	background-color: #fff;
-	color: #0dad8d;
+	border: 2px solid black;
+	color: #FA2D01;
 	border-color: #fff;
 }
 /* Services Section */
@@ -180,7 +184,7 @@ header p {
 	font-size: 40px;
 	margin-bottom: 20px;
 	transition: all 0.5s;
-	color: #0dbf9b;
+	color: #FA2D01;
 }
 /* Gallery Section 
 ==============================*/
@@ -201,17 +205,18 @@ ol.type li {
 }
 ol.type li a {
 	color: #aaa;
-	border: 1px solid #ddd;
+	border: 2px solid #ddd;
+	font-weight: 500;
 	padding: 8px 16px;
 	border-radius: 0;
 }
 ol.type li a.active {
-	color: #0dad8d;
-	border: 1px solid #0dad8d;
+	color: #FA2D01
+	border: 2px solid #FA2D01;
 }
 ol.type li a:hover {
-	color: #0dad8d;
-	border: 1px solid #0dad8d;
+	color: #FA2D01;
+	border: 1px solid #FA2D01;
 }
 .isotope-item {
 	z-index: 2
@@ -339,7 +344,7 @@ img.img-circle.team-img {
 /* Achivements Section */
 #achievements {
 	padding: 80px 0;
-	background-color: #0dbf9b;
+	background-color: #FA2D01;
 }
 .achievement-box {
 	text-align: center;
@@ -369,7 +374,7 @@ img.img-circle.team-img {
 	padding: 30px 0;
 }
 #contact-section i.fa {
-	color: #0dad8d;
+	color: #FA2D01;
 	font-size: 16px;
 	margin-bottom: 10px;
 }
@@ -404,15 +409,15 @@ label {
 }
 #contact-section .btn {
 	background: transparent;
-	border: 2px solid #12dbb2;
+	border: 2px solid #FA2D01;
 	border-radius: 4px;
 	padding: 10px 20px;
 	margin-top: 20px;
-	color: #0dbf9b;
+	color: #FA2D01;
 }
 #contact-section .btn:hover, #contact-section .btn:focus {
-	background: #0dbf9b;
-	border: 2px solid #0dbf9b;
+	background: #FA2D01;
+	border: 2px solid #FA2D01;
 	color: #fff;
 }
 #contact-section .text-danger {
@@ -432,7 +437,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 /* Social Section */
 #social-section {
 	padding: 30px 0;
-	background-color: #0dbf9b;
+	background-color: #222222;
 	text-align: center;
 }
 #social-section .social ul li {
@@ -464,7 +469,7 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 }
 #footer a:hover, a:focus {
 	text-decoration: none;
-	color: #0dad8d;
+	color: #FA2D01;
 }
 
 @media (max-width: 768px) {
@@ -495,4 +500,13 @@ label {
 .about-container {
 	padding-left: ;padding-right:;text-align:left
 }
+}
+
+h1 {
+	text-transform: none !important;
+	font-family: Arial, Helvetica, sans-serif;
+}
+h1 strong {
+	font-weight: 400;
+	font-family: Arial, Helvetica, sans-serif;
 }
