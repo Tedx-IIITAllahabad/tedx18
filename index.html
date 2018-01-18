@@ -298,7 +298,7 @@
   </div>
 </div> -->
 <!-- Prev_Speaker Section -->
-<div id="team-section" class="text-center">
+<div id="team-section" class="text-center" style="font-family:Raleway">
   <div class="container">
     <div class="section-title center">
       <h2>Previous Speakers</h2>
@@ -309,35 +309,35 @@
       <div class="col-md-3 col-sm-6 team">
         <div class="thumbnail"> <img src="img/team/subin.jpg" alt="..." class="img-circle team-img">
           <div class="caption">
-            <h3>Subin</h3>
-            <p>CEO {insert billion$ company}</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+            <h3>Subin Balakrishnan</h3>
+            <p style="color:rgb(138, 136, 135)">Head Events,GCS, Reliance</p>
+            <p>Col Subin Balakrishnan has had a distinguished career in the Indian Army, at the cutting edge of combat leadership.</p> </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 team">
         <div class="thumbnail"> <img src="img/team/ritam.jpg" alt="..." class="img-circle team-img">
           <div class="caption">
             <h3>Ritam Benerjee</h3>
-            <p>CEO {insert billion$ company}</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p style="color:rgb(138, 136, 135)">Celebrity Photographer</p>
+            <p>Shooting extensively across various categories.He has always sought inspiration and challenge in variety.</p>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 team">
         <div class="thumbnail"> <img src="img/team/abhishek.png" alt="..." class="img-circle team-img">
           <div class="caption">
-            <h3>Abhishek</h3>
-            <p>CEO {insert billion$ company}</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Abhishek Acharya</h3>
+            <p style="color:rgb(138, 136, 135)">Illusionist</p>
+            <p>Blowing minds since the age of 17, Abhishek Acharya has indeed carved a niche of his own in the world of magic and mind reading.</p>
           </div>
         </div>
       </div>
       <div class="col-md-3 col-sm-6 team">
         <div class="thumbnail"> <img src="img/team/vikram.jpg" alt="..." class="img-circle team-img">
           <div class="caption">
-            <h3>Vikram</h3>
-            <p>CEO {insert billion$ company}</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <h3>Vikram Sridhar</h3>
+            <p style="color:rgb(138, 136, 135)">Co-founder, Tahatto</p>
+            <p>Vikram Sridhar is a performance storyteller, story researcher and theatre practitioner based in Bangalore</p>
           </div>
         </div>
       </div>
@@ -350,7 +350,14 @@
     <div class="section-title center">
       <h2>Contact Us</h2>
       <hr>
-      <h2 style="font-family: Raleway">{Insert Google maps}</h2>
+      <!-- <h2 style="font-family: Raleway">{Insert Google maps}</h2> -->
+      <div class="row">
+        <div class="col-md-12 col-sm-12 col-xs-12 col-xs-offset-3 col-sm-offset-3 col-md-offset-3">
+          <div id="map"></div>
+        </div>
+      </div>
+      
+      
     </div>
     <div class="col-md-8 col-md-offset-2" style="font-family: Raleway">
       <div class="col-md-4"> <i class="fa fa-map-marker"></i>
@@ -430,6 +437,23 @@
 
 <!-- Javascripts
     ================================================== --> 
+<script>
+  function initMap() {
+    var uluru = {lat: 25.43, lng: 81.77};
+    var map = new google.maps.Map(document.getElementById('map'), {
+      zoom: 15,
+      center: uluru
+    });
+    var marker = new google.maps.Marker({
+      position: uluru,
+      map: map
+    });
+  }
+</script>
+
+<script async defer
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB87ZAO0sTbFpvGA0dN7ANXF3iKPFUP2Zw&callback=initMap">
+</script>
 <script type="text/javascript" src="js/main.js"></script>
 </body>
 </html>
