@@ -536,3 +536,12 @@ h1 strong {
 header {
 	height: 100vh !important; 
 }
+.navbar-brand{
+padding:0 !important;
+}
+
+.navbar-brand img{
+height:45px !important;
+padding-top : 8px !important; 
+}
+
